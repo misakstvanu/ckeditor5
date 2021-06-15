@@ -149,6 +149,15 @@ export default class DataSchema extends Plugin {
 		} );
 
 		this.registerBlockElement( {
+			view: 'div',
+			model: 'htmlDiv',
+			asParagraph: 'htmlDivParagraph',
+			modelSchema: {
+				inheritAllFrom: '$htmlBlock'
+			}
+		} );
+
+		this.registerBlockElement( {
 			view: 'article',
 			model: 'htmlArticle',
 			modelSchema: {
